@@ -1,0 +1,15 @@
+example:
+  property: I AM DEV
+spring:
+  datasource:
+    url: jdbc:postgresql://database:5432/ostock_dev
+    username: postgres
+    password: postgres
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: "http://localhost:8070/eureka/"
